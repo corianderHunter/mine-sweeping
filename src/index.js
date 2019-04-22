@@ -26,19 +26,21 @@ function activate(context) {
             preserveFocus: true,
             viewColumn: 1
         }, {
-            retainContextWhenHidden: true,
-            enableScripts: true
-        });
+                retainContextWhenHidden: true,
+                enableScripts: true
+            });
         const _webview = _webviewPanel.webview
         _webview.html = loadHtml(context, 'page/index.html')
     });
+
+    console.log(__dirname);
 
     context.subscriptions.push(disposable);
 }
 exports.activate = activate;
 
 // this method is called when your extension is deactivated
-function deactivate() {}
+function deactivate() { }
 
 module.exports = {
     activate,

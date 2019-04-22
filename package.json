@@ -1,8 +1,10 @@
 {
 	"name": "mine-sweeping",
 	"displayName": "mine-sweeping",
+	"publisher": "corianderHunter",
 	"description": "",
 	"version": "0.0.1",
+	"repository": "https://github.com/corianderHunter/mine-sweeping",
 	"engines": {
 		"vscode": "^1.32.0"
 	},
